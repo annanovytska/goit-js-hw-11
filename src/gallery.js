@@ -63,6 +63,14 @@ async function onLoadmoreBtnClick(event) {
       renderPhotos(data.hits)
     );
     simple.refresh();
+    const { height: cardHeight } = document
+      .querySelector('.gallery')
+      .firstElementChild.getBoundingClientRect();
+
+    window.scrollBy({
+      top: cardHeight * 2,
+      behavior: 'smooth',
+    });
 
     if (Math.ceil(data.totalHits / 40) < pixabayAPI.page) {
       refs.loadMoreBtnEl.classList.add('is-hidden');

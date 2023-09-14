@@ -7,16 +7,16 @@ export function renderPhotos(photoArr) {
       </a>
   <div class="info">
     <p class="info-item">
-      <b> Likes: </b><br/>${photo.likes}
+      <b> Likes:<br/>${photo.likes}</b>
     </p>
     <p class="info-item">
-      <b>Views: </b><br/>${photo.views}
+      <b>Views:<br/>${photo.views}</b>
     </p>
     <p class="info-item">
-      <b>Comments: </b><br/>${photo.comments}
+      <b>Comments:<br/>${photo.comments}</b>
     </p>
     <p class="info-item">
-      <b>Downloads: </b><br/>${photo.downloads}
+      <b>Downloads:<br/>${photo.downloads}</b>
     </p>
   </div>
 </div>`;
